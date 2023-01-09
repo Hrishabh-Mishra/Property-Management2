@@ -1,0 +1,30 @@
+CSR layers system is being used.
+C - Controller layer	deals with the client
+S - Service layer		deals with the business logic
+R - Repository layer	connects with the DB.
+
+*Implementation layer - Part of the service layer. Implements the service interfaces.
+*Repository layer consists of Entity package
+	1. It contains class that can be mapped to to Tables in the DB.
+	2. Therefore the entity objects will be mapped.
+
+Factory design patter is used in the service layer.
+	1. Interfaces are created for features.
+	2. Implementation classes are for actual logic.
+	3. This is done so that in future multiple implementation classes can be created for
+		same interface.
+		
+/**
+	 * PUT is a combination of POST and GET - Data can be sent by client in the form of parameters
+	 * in the URL, and also in the URL-Body (JSON format).
+	 * 
+	 * POST - used to creat new resource in the server.
+	 * PUT - Used for Updation of existing records. (Mnemonic - pUt has u - update) Like update entire
+	 * 		employee record.
+	 * PATCH - also used for update, but only small requests. Like only employee name.
+	 * 			It is a 'partial update method.'
+	 * DELETE - to delete an existing resource in the server.
+	 * 
+	 *  
+	 */
+ 
