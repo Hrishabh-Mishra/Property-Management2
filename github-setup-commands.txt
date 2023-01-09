@@ -1,0 +1,15 @@
+GitHub - Local Code Commit token - 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
+Git commands to commit code 1st time.
+1. Git init
+2. Git add .
+3. Git commit -m “first commit, any message”
+4. git remote add origin https://github.com/Hrishabh-Mishra/Property-Management.git
+5. Git remote set-url origin https://<USERNAME>:<MYTOKEN>@github.com/<USERNAME>/<REPO>.git
+6. Git push (git push --set-upstream origin main) - pushed into main branch
+
+
+Git remote set-url origin https://Hrishabh-Mishra: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@github.com/Hrishabh-Mishra/Property-Management.git
+
+
+other git commands
+git status
