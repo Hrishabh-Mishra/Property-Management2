@@ -1,3 +1,6 @@
+First time git setup
+--------------------
+
 GitHub - Local Code Commit token - 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
 Git commands to commit code 1st time.
 1. Git init
@@ -11,5 +14,15 @@ Git commands to commit code 1st time.
 Git remote set-url origin https://Hrishabh-Mishra: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@github.com/Hrishabh-Mishra/Property-Management.git
 
 
+-------------------
+second time onwards.
+-------------------
+git pull
+git add .
+git commit -m "comment"
+git push
+
+------------------
 other git commands
+------------------
 git status
