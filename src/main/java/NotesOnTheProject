@@ -27,4 +27,32 @@ Factory design patter is used in the service layer.
 	 * 
 	 *  
 	 */
+	 
+	 
+	 /***
+	 * Both the above methods can be used in a combination.
+	 * PathVariable method or RequestParam method. (Both use GET method of the http request)
+	 * 
+	 * The problem is
+	 * 1. Form multiple variables, above two methods, the url will be extremely lengthy.
+	 * 3. the URL has a limit to its length - it may get cut short and the values may get lost.
+	 * 2. The values are visible in the url, not good for security reasons.
+	 * 
+	 * 
+	 * Another better way to get data - use POST request of the URL. It will use the DTO class
+	 * of the calculator to map the data from the client (Browser).
+	 * In POST mapping -
+	 * 1. the client will send the data in JSON (key:value) format, rather than as a part of the URL.
+	 * 1A. The data is passed in the http body rather than in http address.
+	 * 2. The key must match with the variable name of the DTO object.
+	 * 3. A browser can send only GET request. Hence we need Postman to sent POST request.
+	 * 4. Since POST is used to create a record, the default HttpResponse (i.e 200 OK) must be change to CREATED
+	 * 		This is important because:
+	 * 			1. the client will receive data (multiplication result here)
+	 * 			2. As well as proper status report. 
+	 * 		This can be done by following example.
+	 * 		
+	 * 
+	 */
+	
  

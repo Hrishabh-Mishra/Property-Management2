@@ -8,7 +8,7 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hrishabhMishra</groupId>
+	<groupId>com.hrishabhmishra</groupId>
 	<artifactId>Property-Management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Property-Management</name>
@@ -73,14 +73,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<!--<resources>     
-	        <resource>
-	            <directory>src/main/resources</directory>
-	            <includes>                      
-	                <include>**/*.properties</include>                  
-	            </includes>
-	        </resource>            
-    	</resources>-->
 	</build>
 
 </project>
