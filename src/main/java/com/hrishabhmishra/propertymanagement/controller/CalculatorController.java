@@ -16,8 +16,6 @@ import com.hrishabhmishra.propertymanagement.dto.CalculatorDTO;
 @RequestMapping("/api/v1/calculator") //class level mapping
 public class CalculatorController {
 	
-	//Getting parameters using request param.
-	//http://localhost:8080/api/v1/calculator/add?num1=3.5&num2=6.5
 	@GetMapping("/add") //method level mapping
 	public Double add(@RequestParam("num1") Double num1, @RequestParam("num2") Double num2) {
 		return num1+num2;
