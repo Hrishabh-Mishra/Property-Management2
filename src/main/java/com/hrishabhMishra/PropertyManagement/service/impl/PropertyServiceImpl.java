@@ -103,20 +103,20 @@ public class PropertyServiceImpl implements PropertyService{
 		return propertyDTO;
 	}
 
-	@Override
-	public PropertyDTO updatePropertyOwnerName(PropertyDTO propertyDTO, Long propertyId) {
-		Optional<PropertyEntity> propertyEntityOp = propertyRepository.findById(propertyId);
-		PropertyEntity propertyEntity;
-		if(propertyEntityOp.isPresent()) {
-			propertyEntity = propertyEntityOp.get();
-			propertyEntity.setOwnerName(propertyDTO.getOwnerName());
-			propertyEntity.setId(propertyId);
-			propertyRepository.save(propertyEntity);
-			propertyDTO = converter.propropertyEntitytoDTOConverter(propertyEntity);
-			propertyDTO.setId(propertyId);
-		}
-		return propertyDTO;
-	}
+//	@Override
+//	public PropertyDTO updatePropertyOwnerName(PropertyDTO propertyDTO, Long propertyId) {
+//		Optional<PropertyEntity> propertyEntityOp = propertyRepository.findById(propertyId);
+//		PropertyEntity propertyEntity;
+//		if(propertyEntityOp.isPresent()) {
+//			propertyEntity = propertyEntityOp.get();
+//			propertyEntity.setOwnerName(propertyDTO.getOwnerName());
+//			propertyEntity.setId(propertyId);
+//			propertyRepository.save(propertyEntity);
+//			propertyDTO = converter.propropertyEntitytoDTOConverter(propertyEntity);
+//			propertyDTO.setId(propertyId);
+//		}
+//		return propertyDTO;
+//	}
 
 	@Override
 	public PropertyDTO updatePropertyAddress(PropertyDTO propertyDTO, Long propertyId) {

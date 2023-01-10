@@ -27,7 +27,6 @@ public class PropertyObjectConverter {
 		propertyEntity.setTitle(propertyDTO.getTitle());
 		propertyEntity.setAddress(propertyDTO.getAddress());
 		propertyEntity.setDescription(propertyDTO.getDescription());
-		propertyEntity.setOwnerName(propertyDTO.getOwnerName());
 		propertyEntity.setPrice(propertyDTO.getPrice());
 		
 		return propertyEntity;
@@ -43,11 +42,10 @@ public class PropertyObjectConverter {
 		 * 
 		 * It is known as Adapter design pattern.
 		 */
-		propertyDTO.setId(propertyEntity.getId());
+		
 		propertyDTO.setTitle(propertyEntity.getTitle());
 		propertyDTO.setAddress(propertyEntity.getAddress());
 		propertyDTO.setDescription(propertyEntity.getDescription());
-		propertyDTO.setOwnerName(propertyEntity.getOwnerName());
 		propertyDTO.setPrice(propertyEntity.getPrice());
 		
 		return propertyDTO;

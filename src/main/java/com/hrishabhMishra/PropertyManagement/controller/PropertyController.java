@@ -18,8 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hrishabhMishra.PropertyManagement.DTO.PropertyDTO;
 import com.hrishabhMishra.PropertyManagement.service.PropertyService;
 
-import jakarta.websocket.server.PathParam;
-
 @RestController // to interact with the browser.
 @RequestMapping("/api/v1/property") // to map it with the url.
 
@@ -94,13 +92,14 @@ public class PropertyController {
 	}
 	
 	//OwnerName-Update
-	@PatchMapping("/update-ownerName/{propertyId}")
-	public ResponseEntity<PropertyDTO> updatePropertyOwnerName(@RequestBody PropertyDTO propertyDTO, @PathVariable Long propertyId) {
-		propertyDTO = propertyService.updatePropertyOwnerName(propertyDTO, propertyId);
-		ResponseEntity<PropertyDTO> response = new ResponseEntity<PropertyDTO>(propertyDTO, HttpStatus.OK);
-		
-		return response;
-	}
+//	@PatchMapping("/update-ownerName/{propertyId}")
+//	public ResponseEntity<PropertyDTO> updatePropertyOwnerName(@RequestBody PropertyDTO propertyDTO, @PathVariable Long propertyId) {
+//		propertyDTO = propertyService.updatePropertyOwnerName(propertyDTO, propertyId);
+//		ResponseEntity<PropertyDTO> response = new ResponseEntity<PropertyDTO>(propertyDTO, HttpStatus.OK);
+//		
+//		return response;
+//	}
+	//OwnerName field transfered to UserRegistration flow.
 	
 	//address-Update
 	@PatchMapping("/update-address/{propertyId}")

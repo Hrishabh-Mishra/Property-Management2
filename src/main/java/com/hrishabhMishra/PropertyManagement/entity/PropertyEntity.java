@@ -23,7 +23,6 @@ public class PropertyEntity {
 	@Column(name = "propertyTitle", nullable = false)
 	private String title;
 	private String description;
-	private String ownerName;
 	private String address;
 	private double price;
 	
@@ -48,12 +47,6 @@ public class PropertyEntity {
 	}
 	public void setDescription(String description) {
 		this.description = description;
-	}
-	public String getOwnerName() {
-		return ownerName;
-	}
-	public void setOwnerName(String ownerName) {
-		this.ownerName = ownerName;
 	}
 	public String getAddress() {
 		return address;
