@@ -1,0 +1,9 @@
+com/hrishabhmishra/propertymanagement/entity/PropertyEntity.class
+com/hrishabhmishra/propertymanagement/controller/CalculatorController.class
+com/hrishabhmishra/propertymanagement/controller/PropertyController.class
+com/hrishabhmishra/propertymanagement/dto/CalculatorDTO.class
+com/hrishabhmishra/propertymanagement/service/PropertyService.class
+com/hrishabhmishra/propertymanagement/repository/PropertyRepository.class
+com/hrishabhmishra/propertymanagement/PropertyManagementApplication.class
+com/hrishabhmishra/propertymanagement/dto/PropertyDTO.class
+com/hrishabhmishra/propertymanagement/service/impl/PropertyServiceImpl.class
