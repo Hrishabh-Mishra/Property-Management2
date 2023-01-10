@@ -100,7 +100,7 @@ public class PropertyController {
 	@DeleteMapping("/delete/{propertyId}")
 	public ResponseEntity<Void> deleteProperty(@PathVariable Long propertyId) {
 		propertyService.deleteProperty(propertyId);
-		return new ResponseEntity(null, HttpStatus.OK);
+		return new ResponseEntity<>(null, HttpStatus.OK);
 	}
 
 }
