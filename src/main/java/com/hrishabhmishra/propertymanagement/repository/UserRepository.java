@@ -10,5 +10,6 @@ public interface UserRepository extends CrudRepository<UserEntity, Long>{
 	
 	//Following method name is standard format to help JPA create a custom Query for us.
 	Optional<UserEntity> findByEmailAndPassword (String email, String password);
+	Optional<UserEntity> findByEmail (String email);
 
 }
