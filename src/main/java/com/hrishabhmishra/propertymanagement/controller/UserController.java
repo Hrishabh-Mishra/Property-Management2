@@ -3,6 +3,8 @@ package com.hrishabhmishra.propertymanagement.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,8 +26,12 @@ public class UserController {
 		return new ResponseEntity<>(userDTO, HttpStatus.CREATED);
 	}
 	
-	
-	public UserDTO login(String email, String password) {
-		return null;
+	@PostMapping("/login")
+	public ResponseEntity<UserDTO> login(@RequestBody UserDTO userDTO) {
+		userDTO = userService.login(userDTO.getEmail(), userDTO.getPassword());
+		if(userDTO != null) {
+			return new ResponseEntity<>(userDTO, HttpStatus.OK);
+		}
+		return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
 	}
 }

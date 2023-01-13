@@ -58,4 +58,11 @@ Factory design patter is used in the service layer.
 	
 	//Getting parameters using request param.
 	//http://localhost:8080/api/v1/calculator/add?num1=3.5&num2=6.5
+	
+	
+	Aspect Oriented Programming - The common cross-cutting concerns of the application should be pulled out
+									and implemented at one centralized place.
+									Rather than doing similar functionality in each class, we can handle it separately.
+		1. Error handling
+		2. Logging functionality
  
